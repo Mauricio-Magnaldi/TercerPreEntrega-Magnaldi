@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="h1"></h1>
+        <form id="crearProducto" class="formulario" autocomplete="off">
+            <label>Artículo</label>
+            <input class="input" type="text" name="articulo" minlength="5" maxlength="20" required>
+            <label>Marca</label>
+            <input class="input" type="text" name="marca" minlength="5" maxlength="20" required>
+            <label>Descripción</label>
+            <textarea class="input" type="text" row="3" name="descripcion" minlength="5" maxlength="50" required></textarea>
+            <label>Precio</label>
+            <input class="input" type="text" name="precio" min="10" max="2000" placeholder="$50 a $2000" required>
+            <label>Stock</label>
+            <input class="input" type="number" name="stock" min="0" max="100" placeholder="Mayor a 1" required>
+            <label>Vendedor</label>
+            <select class="input" name="vendedor">
+                <option value="JUAN">JUAN</option>
+                <option value="MARÍA">MARIA</option>
+                <option value="PEDRO">PEDRO</option>
+            </select>
+            <input class="boton" type="submit" value="Cargar">
+        </form>
+        <form id="crearTarjeta" class="formulario"><input class="boton" type="submit" value="Ver Producto"></form>
+        <table id="tabla" class="tabla">
+            <tr>
+                <th>Artículo</th>
+                <th>Marca</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>  
+        </table>
+        <div id="divTarjetasMain"></div>
+    </main>
+    <footer class="footer"></footer>
+    <script type="text/javascript" src="./js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,149 @@
+*   {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 2px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+.header
+    {
+        background-color: #4a538d5f;
+        height: 40px;
+        margin-bottom: 1px;
+        position: sticky;
+        top: 5px;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+.carrito
+    {
+        padding: 30px;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+    }
+
+.carrito span
+    {
+        top: 30px;
+        left: 40px;
+        font-size: 1rem;
+        background-color: rgb(42, 53, 134);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+    }
+
+.h1
+    {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+.main
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+.formulario
+    {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(96, 151, 109);
+        border-radius: 5px;
+        color: white;
+    }
+
+.input
+    {
+        border-radius: 6px;
+        border: 0;   
+    }
+
+.tabla
+    {
+        width: 95%;
+        border:5px solid;
+        border-collapse: collapse;
+        font-size: 1rem;
+        background-color:rgba(53, 103, 129, 0.363);
+    }
+
+.tabla th,.tabla td
+    {   
+        border:1px solid;
+        padding: 10px;
+    }  
+
+#divTarjetasMain
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+
+.tarjetaProducto
+    {
+        width: 200px;
+        height: 310px;
+        border: 1px solid;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-radius: 10px;
+        font-size: 1rem;
+        text-align: center;
+        object-fit: cover;
+    }
+
+.tarjetaProducto img 
+    {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+.tarjetaProducto button 
+    {
+        margin-bottom: 10px;
+    }
+
+.boton
+    {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: rgb(55, 55, 107);
+        color: white;
+    }
+
+.footer
+    {
+        text-align: center;
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+    }
